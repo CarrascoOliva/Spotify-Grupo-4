@@ -4,7 +4,31 @@
     font-family: "Press Start 2P", cursive;
     /* Fuente de pixel art que he encontrado en Google Fonts */
 }
-
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px  #7b6687 ; 
+    border-radius: 10px;
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9a8c61 ; 
+    border-radius: 10px;
+    
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:   #edf7b5;
+    
+  }
 body {
     font-family: "Poppins", sans-serif;
     background-image: url(img/fondo3.jpeg);
@@ -95,13 +119,13 @@ form a {
 
 a {
     text-decoration: none;
-    color: #201037;
+    color:  #edf7b5;
     padding: 10px;
 }
-
-a:hover {
-    border-bottom: 1px solid #201037;
+#otro{
+    color:  #9a8c61 ;
 }
+
 
 footer {
     height: 60px;
@@ -113,8 +137,4 @@ nav a {
 
     padding: 10px;
     font-size: 10px;
-}
-
-.gris {
-    color: grey;
 }
