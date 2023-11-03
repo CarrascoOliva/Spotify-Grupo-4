@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", cursive;
+    /* Fuente de pixel art que he encontrado en Google Fonts */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(img/fondo3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contenedor {
+    text-align: center;
+    items-align: center;
+    margin-top: 30px;
+}
+
+svg {
+    margin: 10px;
+}
+
+.titulo {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.spotify-login {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 5px black;
+    transition: 0.3s;
+    
+
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+.spotify-login input {
+    line-height: 20px;
+    padding: 5px 0;
+    margin: 10px 0;
+    border-radius: 6px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-shadow: inset 0 0 5px black;
+    transition: 0.3s;
+    
+}
+
+#boton:hover {
+    transform: scale(1.1);
+    
+}
+
+#boton:active {
+    transform: scale(0.9);
+    
+}
+
+form a {
+    float: right;
+    font-size: 12px;
+
+}
+
+.spotify-login input[type="submit"] {
+    background-color: #692849;
+    color: white;
+    cursor: pointer;
+}
+
+.spotify-login input[type="submit"]:hover {
+    background-color: #43122e;
+}
+
+.segundo p {
+
+    font-size: 14px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #201037;
+    padding: 10px;
+}
+
+a:hover {
+    border-bottom: 1px solid #201037;
+}
+
+footer {
+    height: 60px;
+    margin-top: 30px;
+
+}
+
+nav a {
+
+    padding: 10px;
+    font-size: 10px;
+}
+
+.gris {
+    color: grey;
+}
