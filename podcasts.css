@@ -97,30 +97,32 @@ body {
 /* SIDEBAR */
 .navbar {
 	background-color: #000;
-	color: #b3b3b3;
+	color: #fffefe;
 	padding-top: 2.4rem;
-
 	grid-row: 1/3;
 	grid-column: 1/2;
-
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
-
 	position: fixed;
 	width: 30rem;
 	height: calc(100vh - 8rem);
+	text-align: center;
+}
+
+.spotify{
+	padding-top: 8px;
 }
 
 .logo-svg {
 	color: #fff;
+	height: 4rem;
 	width: 18rem;
 	padding: 0 2.4rem;
 }
 
 .nav-main {
 	padding: 0 2.4rem;
-
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
@@ -254,6 +256,8 @@ body {
 	cursor: pointer;
 	font-weight: 600;
 	width: auto;
+	text-align: center;
+	padding: 10px;
 }
 
 .title-section:hover {
@@ -378,7 +382,7 @@ body {
 
 /* FOOTER */
 .footer {
-	grid-row: 3/4;
+	
 	grid-column: 2/-1;
 	color: #fff;
 	background-color: #121212;
@@ -438,36 +442,6 @@ body {
 
 .copyright p {
 	color: #a7a7a7;
-	font-size: 1.6rem;
-}
-
-/* BANNER FINAL */
-.banner-bottom {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 2rem;
-	background-image: linear-gradient(90deg, #af2896, #509bf5);
-	color: #fff;
-	position: fixed;
-	bottom: 0;
-	z-index: 20;
-	width: 100%;
-	height: 8rem;
-}
-
-.banner-bottom .content {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-
-.banner-bottom .content span {
-	font-size: 1.4rem;
-	text-transform: uppercase;
-}
-
-.banner-bottom .content p {
 	font-size: 1.6rem;
 }
 
