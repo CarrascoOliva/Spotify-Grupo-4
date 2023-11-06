@@ -90,6 +90,10 @@ body {
 
 .btn-login {
 	text-decoration: none;
+	
+}
+.btn-login:hover{
+	color:#b61717;
 }
 
 .btn-full {
@@ -319,7 +323,7 @@ body {
 
 .card-podcasts:hover,
 .card-soloen-spotify:hover {
-    background-color: #e21d1d;
+    background-color: #bdbaba;
     height: calc(100% + 25px); /* Aumenta la altura en 40px */
     transition: height 0.8s; /* Agrega una transición suave */
 }
@@ -378,7 +382,7 @@ body {
 }
 
 .card-categorias:hover {
-	background-color: #e21d1d;
+	background-color: #bdbaba;
     height: calc(100% + 25px); /* Aumenta la altura en 40px */
     transition: height 0.8s; /* Agrega una transición suave */
 }
@@ -511,17 +515,18 @@ body {
     display: flex;
     align-items: center;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0; /* Elimina el margin "auto" para que se alinee a la izquierda */
 }
+
 
 /* Estilos para el campo de entrada de búsqueda con un estilo medieval */
 .search-bar input {
     padding: 10px;
     flex: 1;
-    border: 2px solid #8B4513; /* Color marrón oscuro para simular un estilo de madera */
+    border: 2px solid #242322; /* Color marrón oscuro para simular un estilo de madera */
     border-radius: 50px;
-    background-color: #D2B48C; /* Color beige para simular un estilo de pergamino */
-    color: #8B4513; /* Color marrón oscuro para el texto */
+    background-color: #9e9d9b; /* Color beige para simular un estilo de pergamino */
+    color: #ffffff; /* Color marrón oscuro para el texto */
     font-family: "Press Start 2P"; /* Fuente de estilo antiguo */
 }
 
@@ -538,8 +543,9 @@ body {
 }
 
 .search-bar button:hover{
-	background-color:#b61717;
-	scale: 1.2;
+	background-color:#ffffff;
+	scale: 1.1;
+	color: #b61717;
 
 }
 
