@@ -4,45 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>   
     <title>Inicio</title>
 </head>
 <body>
-    <div class="principal">
-        <div class="lateralIzq">
-            <div class="lateralSup"></div>
-            <div class="lateralInf"></div>
-        </div>
-        <div class="lateralDer">
-            <div class="cabecera">
-                    <h1>Listas de Spotify</h1>
-                    <p>Mostrar todos</p>
+    <main class="main container">
+        <div class="topbar">
+            <div class="container-arrows">
+                <div class="container-arrow-left">
+                    <
+                </div>
+                <div class="container-arrow-right">
+                    >
+                </div>
             </div>
-            <div class="opcion">
-                <img src="https://via.placeholder.com/200">
-                <h2>Top Hits</h2>
-                <p>ASd asd asd asdasdadasda asd</p>
-            </div>
-            <div class="opcion">
-                <img src="https://via.placeholder.com/200">
-                <h2>All Out 2010s</h2>
-                <p>ASd asd asd asdasdadasda asd</p>
-            </div>
-            <div class="opcion">
-                <img src="https://via.placeholder.com/200">
-                <h2>Rock Classic</h2>
-                <p>ASd asd asd asdasdadasda asd</p>
-            </div>
-            <div class="opcion">
-                <img src="https://via.placeholder.com/200">
-                <h2>Rap caviar</h2>
-                <p>ASd asd asd asdasdadasda asd</p>
-            </div>
-            <div class="opcion">
-                <img src="https://via.placeholder.com/200">
-                <h2>Chill hits</h2>
-                <p>ASd asd asd asdasdadasda asd</p>
+            <div class="buttons-user">
+                <a href="#" class="btn-register">Registrarte</a>
+                <a href="#" class="btn-login btn-full">Iniciar sesión</a>
             </div>
         </div>
-    </div>
+        <nav class="navbar">
+            <div class="container-logo">
+                <a href="#" class="link-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="logo-svg" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                    </svg>
+                </a>
+                <h2 class="spotify">Spotify</h2>
+            </div>
+            <ul class="nav-main">
+                <li>
+                    <a href="#"> <i class="fa-solid fa-house"></i>Inicio </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-bookmark"></i>Tu biblioteca</a>
+                </li>
+            </ul>
+    
+            <div class="extra-options">
+                <button class="btn-create-list">
+                    <i class="fa-solid fa-plus"></i>
+                    Crear Lista
+                </button>
+                <button class="btn-favorite-songs">
+                    <i class="fa-solid fa-heart"></i>
+                    Canciones que te gustan
+                </button>
+            </div>
+    
+            <div class="container-links">
+                <div class="container-links-legal">
+                    <a href="https://www.spotify.com/ec/legal/">Legal</a>
+                    <a href="https://www.spotify.com/ec/privacy/">Centro de Privacidad</a>
+                    <a href="https://www.spotify.com/ec/legal/privacy-policy/">Política de Privacidad</a>
+                    <a href="https://www.spotify.com/ec/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/ec/legal/privacy-policy/#s3">Información sobre los anuncios
+                    </a>
+                </div>
+    
+                <button class="btn-language">
+                    <i class="fa-solid fa-globe"></i>
+                    Español de España
+                </button>
+            </div>
+        </nav>
+    
+        <section class="main-content">
+            <div class="container-name-podcasts">
+                <br>
+                <br>
+                <h1 class="title-section">Listas de Spotify</h1>
+                <div class="inicio-divs">
+                    <div class="cartas-inicio">
+                        <div class="cartas">
+                            <div class="cartas-img">
+                                <img src="./img/hits.jfif" alt="" />
+                            </div>
+                            <h2>Today`s Top Hits</h2>
+                            <p>Jung Kook is on top of the  Hottest 50!</p>
+                        </div>
+                    </div>
+                    <div class="cartas-inicio">
+                        <div class="cartas">
+                                <img src="./img/rap.jfif" alt="" />
+                            <h2>RapCaviar</h2>
+                            <p>New music from Turbo and Gunna</p>
+                        </div>
+                    </div>
+                    <div class="cartas-inicio">
+                        <div class="cartas">
+                                <img src="./img/2010.jfif" alt="" />
+                            <h2>All Out 2010s</h2>
+                            <p>The biggest songs of the 2010</p>
+                        </div>
+                    </div>
+                    <div class="cartas-inicio">
+                        <div class="cartas">
+                                <img src="./img/Rock.jfif" alt="" />
+                            <h2>Rock Classics</h2>
+                            <p>Rock legends & epic songs</p>
+                        </div>
+                    </div>
+                    <div class="cartas-inicio">
+                        <div class="cartas">
+                                <img src="./img/chill.jfif" alt="" />
+                            <h2>Chill Hits</h2>
+                            <p>Kick back to the best new and recent chill hits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="container-links-footer">
+                <div class="links-footer">
+                    <h3>Empresa</h3>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Empleo</a>
+                    <a href="#">For the Record</a>
+                </div>
+                <div class="links-footer">
+                    <h3>Comunidades</h3>
+                    <a href="#">Para artistas</a>
+                    <a href="#">Desarrolladores</a>
+                    <a href="#">Publicidad</a>
+                    <a href="#">Inversores</a>
+                    <a href="#">Proveedores</a>
+                </div>
+                <div class="links-footer">
+                    <h3>Enlaces útiles</h3>
+                    <a href="#">Asistencia</a>
+                    <a href="#">App gratis para móvil</a>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
