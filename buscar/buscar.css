@@ -21,17 +21,29 @@ body {
 
 /* TOPBAR */
 .topbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 2rem;
-	background-color: rgb(221, 139, 31);
-    background-image: url(../img/nav.jpg);
-	position: fixed;
-	z-index: 30;
-	top: 0;
-	right: 0;
-	width: calc(100% - 30rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 2rem;
+    background-color: rgb(221, 139, 31);
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    width: calc(100% - 30rem);
+}
+
+.topbar::before {
+    content: "";
+    background-image: url(../img/fondobuscar\ \(2\).jpg);
+    filter: brightness(20%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1; /* Opcional: Ajusta la opacidad según tus preferencias */
 }
 
 .container-arrows {
@@ -98,19 +110,33 @@ body {
 
 /* SIDEBAR */
 .navbar {
-	background-color: #F25C3A;
-	color: #fffefe;
-	padding-top: 2.4rem;
-	grid-row: 1/3;
-	grid-column: 1/2;
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
-	position: fixed;
-	width: 30rem;
-	height: calc(100vh );
-	text-align: center;
+    background-color: #F25C3A;
+    color: #fffefe;
+    padding-top: 2.4rem;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: fixed;
+    width: 30rem;
+    height: calc(100vh);
+    text-align: center;
 }
+
+.navbar::before {
+    content: "";
+    background-image: url(../img/fondobuscar\ \(2\).jpg);
+    filter: brightness(20%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1; /* Opcional: Ajusta la opacidad según tus preferencias */
+}
+
 
 .spotify{
 	padding-top: 8px;
@@ -293,8 +319,11 @@ body {
 
 .card-podcasts:hover,
 .card-soloen-spotify:hover {
-	background-color: #282828;
+    background-color: #e21d1d;
+    height: calc(100% + 25px); /* Aumenta la altura en 40px */
+    transition: height 0.8s; /* Agrega una transición suave */
 }
+
 
 .card-img img {
 	width: 100%;
@@ -349,7 +378,9 @@ body {
 }
 
 .card-categorias:hover {
-	background-color: #282828;
+	background-color: #e21d1d;
+    height: calc(100% + 25px); /* Aumenta la altura en 40px */
+    transition: height 0.8s; /* Agrega una transición suave */
 }
 
 .card-categorias .card-img img {
@@ -491,29 +522,29 @@ body {
     border-radius: 50px;
     background-color: #D2B48C; /* Color beige para simular un estilo de pergamino */
     color: #8B4513; /* Color marrón oscuro para el texto */
-    font-family: 'Bookman Old Style', serif; /* Fuente de estilo antiguo */
+    font-family: "Press Start 2P"; /* Fuente de estilo antiguo */
 }
 
 /* Estilos para el botón de búsqueda con un estilo medieval */
 .search-bar button {
-    background-color: #8B4513; /* Color marrón oscuro para el botón */
-    color: #fff;
+    background-color: #f1f0f0; /* Color marrón oscuro para el botón */
+    color: #050505;
     border: none;
     border-radius: 50px;
     padding: 10px 15px;
     margin-left: 10px;
     cursor: pointer;
-    font-family: 'Bookman Old Style', serif; /* Fuente de estilo antiguo */
+	font-family:"Press Start 2P", cursive;
 }
 
 .search-bar button:hover{
-	background-color:#763F19;
+	background-color:#b61717;
 	scale: 1.2;
 
 }
 
 /* Estilos para el texto de marcador de posición en el campo de entrada de búsqueda */
 .search-bar input::placeholder {
-    color: #8B4513; /* Color marrón oscuro para el marcador de posición */
-    font-style: italic; /* Estilo de fuente cursiva para el marcador de posición */
+    color: #d6ccc4; /* Color marrón oscuro para el marcador de posición */
+	font-family: "Press Start 2P";/* Estilo de fuente cursiva para el marcador de posición */
 }
