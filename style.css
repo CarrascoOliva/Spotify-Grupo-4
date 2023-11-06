@@ -19,18 +19,23 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #9a8c61;
+    background: var(--dorado-hover);
     border-radius: 10px;
 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #edf7b5;
+    background: var(--dorado);
 
 }
 :root{
     --negro:#000000;
+    --blanco:#fff;
+    --fondo: #692849;
+    --fondo-hover: #43122e;
+    --dorado: #edf7b5;
+    --dorado-hover:#9a8c61;
 
 }
 body {
@@ -82,7 +87,7 @@ label {
     display: block;
     width: 100%;
     text-align: center;
-    box-shadow: inset 0 0 5px black;
+    box-shadow: inset 0 0 5px var(--negro);
     transition: 0.3s;
 
 }
@@ -104,13 +109,13 @@ form a {
 }
 
 .spotify-login input[type="submit"] {
-    background-color: #692849;
-    color: white;
+    background-color: var(--fondo);
+    color: var(--dorado);
     cursor: pointer;
 }
 
 .spotify-login input[type="submit"]:hover {
-    background-color: #43122e;
+    background-color: var(--fondo-hover);
 }
 
 .segundo p {
@@ -121,12 +126,12 @@ form a {
 
 a {
     text-decoration: none;
-    color: #edf7b5;
+    color: var(--dorado);
     padding: 10px;
 }
 
 #otro {
-    color: #9a8c61;
+    color: var(--dorado-hover);
 }
 
 
