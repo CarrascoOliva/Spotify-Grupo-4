@@ -29,7 +29,10 @@
     background: #edf7b5;
 
 }
+:root{
+    --negro:#000000;
 
+}
 body {
     background-image: url(img/fondo3.jpeg);
     background-position: center;
@@ -61,7 +64,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    box-shadow: inset 0 0 5px black;
+    box-shadow: inset 0 0 5px var(--negro);
     transition: 0.3s;
 
 }
