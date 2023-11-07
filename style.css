@@ -51,6 +51,15 @@ body {
 	align-items: center;
 }
 
+.container-arrow-right:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.container-arrow-left:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
 .container-arrow-left i,
 .container-arrow-right i {
 	color: #fff;
@@ -508,4 +517,8 @@ body {
     margin-left: 120px;
 	opacity: 1;
   } 
+}
+
+.play-icono:hover{
+	transform: scale(1.15);
 }
