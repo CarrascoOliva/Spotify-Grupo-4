@@ -299,10 +299,12 @@ body {
 .card-img img {
 	width: 100%;
 	border-radius: 0.5rem;
+	z-index: -1;
 }
 
 .card-img {
 	overflow: hidden;
+	
 }
 
 .card h2 {
@@ -473,4 +475,37 @@ body {
 .btn-play i{
     font-size: 2.3rem;
     padding-left: .5rem;
+}
+.play-icono{
+	background: #00fd00;
+	border-radius: 50%;
+	display: flex;
+	width: 50px;
+	height: 50px;
+	transition: 1s;
+	justify-content: center;
+	align-items: center;
+	z-index:1;
+	position:absolute;
+	opacity: 0;
+}
+.card-categorias:hover .play-icono{
+	animation: moverPlay 1s forwards;
+}
+
+.play-icono img{
+	width: 35px;
+	height: 25px;
+}
+@keyframes moverPlay {
+  0% {
+	margin-top: -30px;
+    margin-left: 120px;
+  }
+
+  100% {
+	margin-top: -60px;
+    margin-left: 120px;
+	opacity: 1;
+  } 
 }
