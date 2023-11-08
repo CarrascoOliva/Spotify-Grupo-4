@@ -324,7 +324,7 @@ body {
 .card-podcasts:hover,
 .card-soloen-spotify:hover {
     background-color: #bdbaba;
-    height: calc(100% + 25px); /* Aumenta la altura en 40px */
+   scale:1.2; /* Aumenta la altura en 40px */
     transition: height 0.8s; /* Agrega una transición suave */
 }
 
@@ -383,7 +383,7 @@ body {
 
 .card-categorias:hover {
 	background-color: #bdbaba;
-    height: calc(100% + 25px); /* Aumenta la altura en 40px */
+    scale:1.2; /* Aumenta la altura en 40px */
     transition: height 0.8s; /* Agrega una transición suave */
 }
 
