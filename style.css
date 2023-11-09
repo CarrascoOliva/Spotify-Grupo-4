@@ -506,7 +506,30 @@ body {
 	opacity: 1;
   } 
 }
-
+@keyframes moverNavbar {
+	0% {
+	  margin-top: -300px;
+	}
+	100% {
+		
+	} 
+  }
+  @keyframes moverNavbar2 {
+	0% {
+	  margin-top: -300px;
+	}
+	100% {
+		
+	} 
+  }
+  @keyframes moverNavbarInferior {
+	0% {
+	  margin-top: 2000px;
+	}
+	100% {
+		
+	} 
+  }
 .play-icono:hover{
 	transform: scale(1.15);
 }
@@ -523,3 +546,28 @@ body {
 	flex-direction: column;
 	gap: 3rem;
 }
+.extra-options, .nav-main{
+	animation: moverNavbar 1s ;
+}
+.container-links-legal{
+	animation: moverNavbarInferior 1s ;
+}
+
+.container-logo{
+	transition: transform 0.5s;
+}
+.container-logo:hover{
+	animation: aumento 1s linear infinite;
+}
+
+@keyframes aumento {
+	0% {
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	} 
+  }
