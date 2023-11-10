@@ -5,8 +5,40 @@
     /* Fuente de pixel art que he encontrado en Google Fonts */
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #7b6687;
+    border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--dorado-hover);
+    border-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dorado);
+
+}
+:root{
+    --negro:#000000;
+    --blanco:#fff;
+    --fondo: #692849;
+    --fondo-hover: #43122e;
+    --dorado: #edf7b5;
+    --dorado-hover:#9a8c61;
+
+}
+.fondo-login {
     background-image: url(img/fondo3.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -18,14 +50,16 @@ body {
     text-align: center;
     items-align: center;
     margin-top: 30px;
+    animation: salir 2s;
 }
 
-svg {
+.contenedor svg{
     margin-top: 100px;
     margin-bottom: 10px;
+    color:var(--negro);
 }
 
-.titulo {
+.fondo-login .titulo {
     margin: 20px;
     font-size: 20px;
 }
@@ -37,9 +71,8 @@ svg {
     border: 1px solid #ddd;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    box-shadow: inset 0 0 5px black;
+    box-shadow: inset 0 0 5px var(--negro);
     transition: 0.3s;
-    
 
 }
 
@@ -56,19 +89,19 @@ label {
     display: block;
     width: 100%;
     text-align: center;
-    box-shadow: inset 0 0 5px black;
+    box-shadow: inset 0 0 5px var(--negro);
     transition: 0.3s;
-    
+
 }
 
 #boton:hover {
     transform: scale(1.1);
-    
+
 }
 
 #boton:active {
     transform: scale(0.9);
-    
+
 }
 
 form a {
@@ -78,13 +111,13 @@ form a {
 }
 
 .spotify-login input[type="submit"] {
-    background-color: #692849;
-    color: white;
+    background-color: var(--fondo);
+    color: var(--dorado);
     cursor: pointer;
 }
 
 .spotify-login input[type="submit"]:hover {
-    background-color: #43122e;
+    background-color: var(--fondo-hover);
 }
 
 .segundo p {
@@ -93,28 +126,35 @@ form a {
     padding: 10px;
 }
 
-a {
+.fondo-login a {
     text-decoration: none;
-    color: #201037;
+    color: var(--dorado);
     padding: 10px;
 }
 
-a:hover {
-    border-bottom: 1px solid #201037;
+#otro {
+    color: var(--dorado-hover);
 }
 
-footer {
+
+.fondo-login footer {
     height: 60px;
     margin-top: 30px;
 
 }
 
-nav a {
+.fondo-login nav a {
 
     padding: 10px;
     font-size: 10px;
 }
+@keyframes salir {
+    0% {
+      transform: translatex(-150%);
+      opacity: 0%;
+    }
 
-.gris {
-    color: grey;
-}
+    100% {
+      transform: translateX(0%);
+    }
+  }
