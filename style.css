@@ -38,7 +38,7 @@
     --dorado-hover:#9a8c61;
 
 }
-body {
+.fondo-login {
     background-image: url(img/fondo3.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -50,14 +50,16 @@ body {
     text-align: center;
     items-align: center;
     margin-top: 30px;
+    animation: salir 2s;
 }
 
 .contenedor svg{
     margin-top: 100px;
     margin-bottom: 10px;
+    color:var(--negro);
 }
 
-.titulo {
+.fondo-login .titulo {
     margin: 20px;
     font-size: 20px;
 }
@@ -124,7 +126,7 @@ form a {
     padding: 10px;
 }
 
-a {
+.fondo-login a {
     text-decoration: none;
     color: var(--dorado);
     padding: 10px;
@@ -135,14 +137,24 @@ a {
 }
 
 
-footer {
+.fondo-login footer {
     height: 60px;
     margin-top: 30px;
 
 }
 
-nav a {
+.fondo-login nav a {
 
     padding: 10px;
     font-size: 10px;
 }
+@keyframes salir {
+    0% {
+      transform: translatex(-150%);
+      opacity: 0%;
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
